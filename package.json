@@ -1,0 +1,19 @@
+{
+    "name": "pole",
+    "description": "pole",
+    "version": "0.0.2",
+    "keywords": [
+        "pole"
+    ],
+    "respository": {
+        "type": "git",
+        "url": "https://github.com/maxzhang/pole.git"
+    },
+    "bugs": {
+        "url": "https://github.com/maxzhang/pole/issues"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "license": "MIT"
+}
