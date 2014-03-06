@@ -1,19 +1,39 @@
 {
     "name": "pole",
-    "description": "pole",
+    "title": "Pole",
+    "description": "",
     "version": "0.0.2",
+    "author": {
+        "name": "maxzhang <zhangdaiping@gmail.com>",
+        "url": "https://github.com/maxzhang"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/polejs/pole.git"
+    },
     "keywords": [
         "pole"
     ],
-    "respository": {
-        "type": "git",
-        "url": "https://github.com/maxzhang/pole.git"
-    },
     "bugs": {
-        "url": "https://github.com/maxzhang/pole/issues"
+        "url": "https://github.com/polejs/pole/issues"
     },
-    "engines": {
-        "node": "*"
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/polejs/pole/blob/master/MIT-LICENSE.md"
+        }
+    ],
+    "bin": {
+        "pole": "bin/pole"
     },
-    "license": "MIT"
+    "dependencies": {
+        "globule": "~0.2.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-jshint": "~0.8.0",
+        "grunt-contrib-nodeunit": "~0.3.2",
+        "grunt-contrib-watch": "~0.5.3",
+        "load-grunt-tasks": "~0.4.0"
+    }
 }
