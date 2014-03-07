@@ -27,6 +27,7 @@
         "pole": "bin/pole"
     },
     "dependencies": {
+        "pole-mock": "~0.0.1",
         "globule": "~0.2.0"
     },
     "devDependencies": {

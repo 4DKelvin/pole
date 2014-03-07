@@ -1,5 +1,21 @@
 #!/usr/bin/env node
 
+'use strict';
+
+var info = require('../lib/info');
+var pole = require('../lib/pole');
+
 process.title = 'pole';
 
-require('../lib/cli').run(process.argv);
+var argv = process.argv;
+var option = argv[2];
+
+if (option === '-v' || option === '--version') {
+    info.version();
+} else if (argv.length < 3 || option === '-h' || option === '--help') {
+    info.help();
+} else if (option === 'compile') {
+    pole.cli();
+} else {
+    info.help();
+}
