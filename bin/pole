@@ -3,7 +3,6 @@
 'use strict';
 
 var info = require('../lib/info');
-var pole = require('../lib/pole');
 
 process.title = 'pole';
 
@@ -15,7 +14,7 @@ if (option === '-v' || option === '--version') {
 } else if (argv.length < 3 || option === '-h' || option === '--help') {
     info.help();
 } else if (option === 'compile') {
-    pole.cli();
+    require('../lib/pole').cli();
 } else {
     info.help();
 }

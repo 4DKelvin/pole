@@ -1,11 +1,11 @@
 {
     "mockConfig": "pole-mock-config.json",
-    "src": "**/*.html",
-    "dist": "dest/",
+    "src": ["a/**/*.html"],
+    "dest": "dist/",
     "fragmentDir": "fragments/",
     "target": "jsp",
-    "template": "default",
-    "specTemplate": {
+    "targetTemplate": "default",
+    "targetTemplateSpecs": {
         "a/b/1.html": "xxx.tpl"
     }
 }
