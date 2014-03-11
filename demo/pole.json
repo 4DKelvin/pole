@@ -1,8 +1,9 @@
 {
-    "mockConfig": "pole-mock-config.json",
-    "src": ["a/**/*.html"],
+    "mockConfig": "app/pole-mock-config.json",
+    "poleCoreFile": "app/scripts/pole-core.js",
+    "src": ["app/a/**/*.html"],
     "dest": "dist/",
-    "fragmentDir": "fragments/",
+    "fragmentDir": "app/fragments/",
     "target": "jsp",
     "targetTemplate": "default",
     "targetTemplateSpecs": {
