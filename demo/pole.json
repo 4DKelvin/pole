@@ -4,9 +4,5 @@
     "src": ["app/a/**/*.html"],
     "dest": "dist/",
     "fragmentDir": "app/fragments/",
-    "target": "jsp",
-    "targetTemplate": "default",
-    "targetTemplateSpecs": {
-        "a/b/1.html": "xxx.tpl"
-    }
+    "target": "jsp"
 }
