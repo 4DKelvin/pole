@@ -31,6 +31,7 @@
         "globule": "~0.2.0",
         "lodash": "~2.4.1",
         "chalk": "~0.4.0",
+        "jison-lex": "~0.2.1",
         "pole-compile-jsp": "~0.0.1",
         "pole-adapt-mustache": "~0.0.1"
     },
