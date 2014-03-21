@@ -9,7 +9,11 @@
 
 <body>
 
-
+<h1><c:out value="${message}" escapeXml="true" /></h1>
+<div>xxxxxx</div>
+<div>xxxxxx</div>
+<div>xxxxxx</div>
+<div>xxxxxx</div>
 
 <p>This example shows how to use pole-mock.</p>
 
