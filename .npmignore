@@ -1,5 +1,3 @@
-/demo
-
 .git
 .idea
 .project
@@ -13,3 +11,4 @@
 /bower_components
 /node_modules
 /npm-debug.log
+/demo
