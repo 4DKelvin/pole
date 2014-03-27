@@ -8,6 +8,6 @@
 *.diff
 *.patch
 
-/bower_components
-/node_modules
-/npm-debug.log
+bower_components
+node_modules
+npm-debug.log
