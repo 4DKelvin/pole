@@ -2,7 +2,7 @@
     "name": "pole",
     "title": "Pole",
     "description": "",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "author": {
         "name": "Max Zhang",
         "email": "zhangdaiping@gmail.com",
@@ -32,9 +32,9 @@
         "globule": "~0.2.0",
         "chalk": "~0.4.0",
         "lodash": "~2.4.1",
-        "pole-parser": "~0.0.10",
-        "pole-adapt-mustache": "~0.0.4",
-        "pole-compile-jsp": "~0.0.2"
+        "pole-parser": "~0.0.11",
+        "pole-adapt-mustache": "~0.0.5",
+        "pole-compile-jsp": "~0.0.4"
     },
     "devDependencies": {
         "grunt": "~0.4.4",
