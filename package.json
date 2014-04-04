@@ -36,7 +36,7 @@
         "pole-adapt-mustache": "~0.0.6",
         "pole-adapt-arttemplate": "~0.0.2",
         "pole-adapt-underscore": "~0.0.1",
-        "pole-compile-jsp": "~0.0.5"
+        "pole-compile-jsp": "~0.0.6"
     },
     "devDependencies": {
         "grunt": "~0.4.4",
