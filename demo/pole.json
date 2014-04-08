@@ -2,7 +2,7 @@
     "mockConfig": "app/pole-mock-config.json",
     "poleCoreFile": "app/scripts/pole-core.js",
     "src": ["app/a/**/*.html"],
-    "dist": "dist/",
+    "dest": "dest/",
     "fragmentDir": "app/fragments/",
     "target": "jsp"
 }
