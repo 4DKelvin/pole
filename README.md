@@ -42,7 +42,7 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 ### [Pole Mock](https://github.com/polejs/pole-mock)
 Pole Mock是一个JavaScript库，。
 
-具体参见[Pole Mock API](https://github.com/polejs/pole-mock)
+更多细节参见：[Pole Mock API](https://github.com/polejs/pole-mock)
 
 ### Pole Compiler
 Pole Compiler是一个Node模块，
