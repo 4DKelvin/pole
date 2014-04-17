@@ -34,6 +34,7 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 * 使用Pole Compiler模块将静态HTML页面编译为后端可运行的JSP或PHP，实现前后端页面模版共享；
 
 基于Pole的Web应用系统结构
+
 ![pole-structure](https://raw.github.com/maxzhang/maxzhang.github.com/master/articles/images/pole-structure.png)
 
 
