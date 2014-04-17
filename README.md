@@ -1,6 +1,6 @@
 Pole：前端开静态化解决方案
 ==========================
-Pole是前端开发集成解决方案的一个组成部分，解决Web应用静态化开发调试的问题，将前后端工作解耦，使前端开发更加的专注在界面工程上。
+Pole是前端开发集成环境的一个组成部分，解决Web应用静态化开发调试的问题，将前后端工作解耦，使前端开发更加的专注在视图层。
 
 在产品开发过程中，除纯静态单页Web应用之外，几乎都无法避免由页面动态化（将html转换成jsp或php）带来的一些问题：
 * 本机前端开发环境复杂，至少需要部署两个开发环境，除前端环境之外，还额外需要一个动态环境，辅助jsp等动态页面开发调试；
@@ -37,6 +37,18 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 
 ![pole-structure](https://raw.github.com/maxzhang/maxzhang.github.com/master/articles/images/pole-structure.png)
 
+在本机使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那只要依赖```[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)```模块，调用```grunt server```命名启动服务就行。
+
+### [Pole Mock](https://github.com/polejs/pole-mock)
+
+
+Pole Mock是一个JavaScript库，：
+
+
+
+### Pole Compiler
+
+### Grunt Plugin
 
 
 
