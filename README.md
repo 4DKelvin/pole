@@ -16,7 +16,7 @@ Pole是前端开发集成解决方案的一个组成部分，解决Web应用静�
 
 为什么静态化
 ------------
-推荐大家先阅读两篇檄文，虽然这两篇文章发布的时间比我启动Pole项目的时间稍晚，但文章描述的内容也是我在思考的。
+推荐大家先阅读两篇檄文，虽然这两篇文章发布的时间比我启动Pole项目的时间稍晚，但文章描述的内容也是我正在思考的。
 * [Web研发模式演变](https://github.com/lifesinger/lifesinger.github.com/issues/184)
 * [前后端分离的思考与实践（一）](http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/#comment-12055)
 
@@ -27,10 +27,15 @@ Pole探索的是另一种更简单的开发模式——Web应用静态化，Pole
 
 Pole实现静态化
 --------------
+Pole不是独立存在的一个工具，只有将它融入到一个完整的前端开发集成环境中，才能真正发挥它的作用。Pole只是解决了Web应用静态花的问题，是开发者具备了在本机开发、调试和运行测试用例的能力。
+
+实现Web应用静态化依赖Pole的两个能力：
+* 使用[Pole Mock API](https://github.com/polejs/pole-mock)模拟后台数据接口实现纯静态化开发和调试；
+* 使用Pole Compiler模块将静态HTML页面编译为后端可运行的JSP或PHP，实现前后端页面模版共享；
+
+基于Pole的Web应用系统结构
+![pole-structure](https://raw.github.com/maxzhang/maxzhang.github.com/master/articles/images/pole-structure.png)
 
 
 
-Pole包含两个模块：
-* 使用[Mock API](https://github.com/polejs/pole-mock)模拟后台数据接口实现纯静态化开发和调试
-* 使用Compiler模块实现前后端页面模版共享
 
