@@ -37,18 +37,23 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 
 ![pole-structure](https://raw.github.com/maxzhang/maxzhang.github.com/master/articles/images/pole-structure.png)
 
-在本机使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那只要依赖```[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)```模块，调用```grunt server```命名启动服务就行。
+使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那只需要依赖[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)模块，命令行调用```grunt server```启动服务就行。
 
 ### [Pole Mock](https://github.com/polejs/pole-mock)
+Pole Mock是一个JavaScript库，。
 
-
-Pole Mock是一个JavaScript库，：
-
-
+具体参见[Pole Mock API](https://github.com/polejs/pole-mock)
 
 ### Pole Compiler
+Pole Compiler是一个Node模块，
 
-### Grunt Plugin
+### [Grunt Plugin](https://github.com/polejs/grunt-pole)
+为了更好的发挥Pole的作用，需要将Pole集成到一个完整的前端开发集成环境中，Grunt就是一个很好的选择。Pole提供一个Grunt插件[grunt-pole](https://github.com/polejs/grunt-pole)，将Pole作为自动化构建的一部分，使```pole compile```命令可以在Grunt环境下运行。
+
+Web应用静态化之后，GUI用例测试也变得简单，使用[grunt-contrib-qunit](https://github.com/gruntjs/grunt-contrib-qunit)或其他测试框架，针对静态Web应用编写测试用例，并在静态环境下运行测试用例。
+
+Compile Options
+---------------
 
 
 
