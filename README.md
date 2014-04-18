@@ -52,7 +52,7 @@ Pole Compiler是一个Node模块，它将```PoleTag```编译成目标动态页�
 ### [Grunt Plugin](https://github.com/polejs/grunt-pole)
 为了更好的发挥Pole的作用，需要将Pole集成到一个完整的前端开发集成环境中，Grunt就是一个很好的选择。Pole提供一个Grunt插件[grunt-pole](https://github.com/polejs/grunt-pole)，将Pole作为自动化构建的一部分，使```pole compile```命令可以在Grunt环境下运行。
 
-Web应用静态化之后，GUI用例测试也变得简单，使用[PhantomJS](http://phantomjs.org/)或其他测试框架，针对静态Web应用编写测试用例，并在静态环境下运行测试用例。
+Web应用静态化之后，GUI用例测试也变得简单，使用[PhantomJS](http://phantomjs.org/)或其他测试框架，针对静态Web应用编写GUI测试用例，并在静态环境下运行GUI测试用例。
 
 Pole的简单示例
 --------------
@@ -98,6 +98,7 @@ npm install grunt-pole --save-dev
 // 指定文件名
 src: 'app/1.html'
 
+// 指定文件数组
 src: ['app/1.html', 'app/2.html']
 
 // 匹配文件类型
