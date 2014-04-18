@@ -37,7 +37,7 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 
 ![pole-structure](https://raw.github.com/maxzhang/maxzhang.github.com/master/articles/images/pole-structure.png)
 
-使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那只需要依赖[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)模块，命令行调用```grunt server```启动服务就行。
+使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那就更简单了，只需要依赖[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)模块。
 
 ### [Pole Mock](https://github.com/polejs/pole-mock)
 Pole Mock是一个JavaScript库，它由```PoleTag（html标签）```和```JavaScript API```两部分构成。
@@ -45,9 +45,9 @@ Pole Mock是一个JavaScript库，它由```PoleTag（html标签）```和```JavaS
 更多细节参见：[Pole Mock API](https://github.com/polejs/pole-mock)
 
 ### Pole Compiler
-Pole Compiler是一个Node模块，它将PoleTag编译成目标动态页面标记。将Pole Compiler集成到[Grunt](http://gruntjs.com/)或[Glup](http://gulpjs.com/)这样的自动化构建工具之中，
+Pole Compiler是一个Node模块，它将PoleTag编译成目标动态页面标记。将Pole Compiler集成到[Grunt](http://gruntjs.com/)或[Glup](http://gulpjs.com/)这样的自动化构建工具之中，将极大的提高Pole的工作效率。
 
-下面将详细描述如何[使用Pole Compiler](#使用Pole Compiler)。
+下面将详细描述如何[使用Pole Compiler](#%E4%BD%BF%E7%94%A8pole-compiler)。
 
 ### [Grunt Plugin](https://github.com/polejs/grunt-pole)
 为了更好的发挥Pole的作用，需要将Pole集成到一个完整的前端开发集成环境中，Grunt就是一个很好的选择。Pole提供一个Grunt插件[grunt-pole](https://github.com/polejs/grunt-pole)，将Pole作为自动化构建的一部分，使```pole compile```命令可以在Grunt环境下运行。
@@ -67,8 +67,10 @@ Pole的简单示例
 npm install pole --save-dev
 ```
 
-Compile Options
----------------
 
+
+### Compile Options
+
+#### 
 
 
