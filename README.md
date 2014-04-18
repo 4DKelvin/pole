@@ -27,7 +27,7 @@ Pole探索的是另一种更简单的开发模式——Web应用静态化，Pole
 
 Pole实现静态化
 --------------
-Pole不是独立存在的一个工具，只有将它融入到一个完整的前端开发集成环境中，才能真正发挥它的作用。Pole只是解决了Web应用静态花的问题，是开发者具备了在本机开发、调试和运行测试用例的能力。
+Pole不是独立存在的一个工具，只有将它融入到一个完整的前端开发集成环境中，才能真正发挥它的作用。Pole只是解决了Web应用静态化的问题，是开发者具备了在本机开发、调试和运行测试用例的能力。
 
 实现Web应用静态化依赖Pole的两个能力：
 * 使用[Pole Mock API](https://github.com/polejs/pole-mock)模拟后台数据接口实现纯静态化开发和调试；
@@ -40,17 +40,32 @@ Pole不是独立存在的一个工具，只有将它融入到一个完整的前�
 使用Pole开发Web应用，仅需启动一个本地http服务，就能运行Web应用。如果Web应用是基于Grunt构建，那只需要依赖[grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)模块，命令行调用```grunt server```启动服务就行。
 
 ### [Pole Mock](https://github.com/polejs/pole-mock)
-Pole Mock是一个JavaScript库，。
+Pole Mock是一个JavaScript库，它由```PoleTag（html标签）```和```JavaScript API```两部分构成。
 
 更多细节参见：[Pole Mock API](https://github.com/polejs/pole-mock)
 
 ### Pole Compiler
-Pole Compiler是一个Node模块，
+Pole Compiler是一个Node模块，它将PoleTag编译成目标动态页面标记。将Pole Compiler集成到[Grunt](http://gruntjs.com/)或[Glup](http://gulpjs.com/)这样的自动化构建工具之中，
+
+下面将详细描述如何[使用Pole Compiler](#使用Pole Compiler)。
 
 ### [Grunt Plugin](https://github.com/polejs/grunt-pole)
 为了更好的发挥Pole的作用，需要将Pole集成到一个完整的前端开发集成环境中，Grunt就是一个很好的选择。Pole提供一个Grunt插件[grunt-pole](https://github.com/polejs/grunt-pole)，将Pole作为自动化构建的一部分，使```pole compile```命令可以在Grunt环境下运行。
 
-Web应用静态化之后，GUI用例测试也变得简单，使用[grunt-contrib-qunit](https://github.com/gruntjs/grunt-contrib-qunit)或其他测试框架，针对静态Web应用编写测试用例，并在静态环境下运行测试用例。
+Web应用静态化之后，GUI用例测试也变得简单，使用[PhantomJS](http://phantomjs.org/)或其他测试框架，针对静态Web应用编写测试用例，并在静态环境下运行测试用例。
+
+Pole的简单示例
+--------------
+[pole-demo](https://github.com/polejs/pole-demo)是一个Pole的简单示例项目，使用Grunt构建，结合Pole实现Web应用的静态化，可以在纯静态环境下运行和开发，并使用Pole Compiler将静态HTML编译成JSP。
+
+使用Pole Compiler
+-----------------
+
+
+
+```shell
+npm install pole --save-dev
+```
 
 Compile Options
 ---------------
