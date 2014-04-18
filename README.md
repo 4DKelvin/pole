@@ -117,7 +117,7 @@ src: ['app/**/*.html']
 指定编译目标语言，取值范围：'jsp'，目前仅支持JSP。
 
 #### targetTemplate : String
-指定目标语言页面模版，默认为编译自带模版。
+指定目标语言页面模版，默认为编译工具自带模版。
 
 #### targetTemplateSpecs : Object
 指定特定HTML使用的页面模版，如：
