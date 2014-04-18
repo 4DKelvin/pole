@@ -131,7 +131,7 @@ targetTemplateSpecs: {
 
 ### Usage Examples
 
-```json
+```
 {
     mockConfig: 'app/pole-mock-config.json',
     poleCoreFile:'app/assets/node_modules/pole-mock/pole-core.js',
