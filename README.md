@@ -45,7 +45,7 @@ Pole Mock是一个JavaScript库，它由```PoleTag（html标签）```和```JavaS
 更多细节参见：[Pole Mock API](https://github.com/polejs/pole-mock)
 
 ### Pole Compiler
-Pole Compiler是一个Node模块，它将PoleTag编译成目标动态页面标记。将Pole Compiler集成到[Grunt](http://gruntjs.com/)或[Glup](http://gulpjs.com/)这样的自动化构建工具之中，将极大的提高Pole的工作效率。
+Pole Compiler是一个Node模块，它将```PoleTag```编译成目标动态页面标记。将Pole Compiler集成到[Grunt](http://gruntjs.com/)或[Glup](http://gulpjs.com/)这样的自动化构建工具之中，将极大的提高Pole的工作效率。
 
 下面将详细描述如何[使用Pole Compiler](#%E4%BD%BF%E7%94%A8pole-compiler)。
 
@@ -60,17 +60,89 @@ Pole的简单示例
 
 使用Pole Compiler
 -----------------
+使用Compiler之前，必须先确认Web应用已经使用[Pole Mock](https://github.com/polejs/pole-mock)并符合接口规范。
 
-
+运行下面命令安装Pole Compiller：
 
 ```shell
 npm install pole --save-dev
 ```
 
+如果是Grunt环境，则安装[grunt-pole](https://github.com/polejs/grunt-pole)插件，运行命令：
 
+```shell
+npm install grunt-pole --save-dev
+```
+
+具体请参考[grunt-pole](https://github.com/polejs/grunt-pole)项目文档。
+
+### 运行Pole Compiler
+在工作目录下创建```pole.json```文件，如果是Grunt环境，则直接配置``Gruntfile.js```的task。
+
+在命令行执行```pole compile```，将源文件编译成动态页面。
 
 ### Compile Options
 
-#### 
+#### mockConfig : String
+指定```pole-mock-config.json```路径，有关```pole-mock-config.json```参见[Pole Mock](https://github.com/polejs/pole-mock)文档。
 
+#### poleCoreFile : String
+指定```pole-core.js```路径，```pole-core.js```可以在[Pole Mock](https://github.com/polejs/pole-mock)项目中获得。
 
+运行```pole compile```之后，会生成两类文件，其中一个是```pole-release.js```，```pole-release.js```是将```pole-core.js```和模版打包在一起生成的JS文件，它最终会运行在正式项目中，用来替代开发环境中使用的```pole-mock.js```。
+
+#### src : String/Array
+指定将被编译的源文件路径，可以是一下几种格式：
+
+```js
+// 指定文件名
+src: 'app/1.html'
+
+src: ['app/1.html', 'app/2.html']
+
+// 匹配文件类型
+src: ['app/*.html']
+
+// 匹配文件类型，包含子目录文件
+src: ['app/**/*.html']
+```
+
+#### dest : String
+指定输出目录。
+
+#### fragmentDir : String
+指定碎片目录，有关```PoleFragmentTag```的用法参见[Pole Mock](https://github.com/polejs/pole-mock)项目文档。
+
+#### target : String
+指定编译目标语言，取值范围：'jsp'，目前仅支持JSP。
+
+#### targetTemplate : String
+指定目标语言页面模版，默认为编译自带模版。
+
+#### targetTemplateSpecs : Object
+指定特定HTML使用的页面模版，如：
+
+```js
+targetTemplateSpecs: {
+    'app/grid.html': 'app/jsp_templates/grid.tpl',
+    'app/infinite-scroll.html': 'app/jsp_templates/infinite-scroll.tpl'
+}
+```
+
+### Usage Examples
+
+```json
+{
+    mockConfig: 'app/pole-mock-config.json',
+    poleCoreFile:'app/assets/node_modules/pole-mock/pole-core.js',
+    src: ['app/*.html'],
+    dest: 'dest/',
+    fragmentDir: 'app/fragments/',
+    target: 'jsp',
+    targetTemplate: 'app/jsp_templates/default.tpl',
+    targetTemplateSpecs: {
+        'app/grid.html': 'app/jsp_templates/grid.tpl',
+        'app/infinite-scroll.html': 'app/jsp_templates/infinite-scroll.tpl'
+    }
+}
+```
