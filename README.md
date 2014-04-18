@@ -131,6 +131,7 @@ targetTemplateSpecs: {
 ```
 
 ### Usage Examples
+参见[pole-demo](https://github.com/polejs/pole-demo)
 
 ```
 {
