@@ -112,7 +112,11 @@ src: ['app/**/*.html']
 指定输出目录。
 
 #### fragmentDir : String
-指定碎片目录，有关```PoleFragmentTag```的用法参见[Pole Mock](https://github.com/polejs/pole-mock)项目文档。
+指定碎片目录，在执行```pole compile```时，替换```PoleFragmentTag```知道的碎片内容。
+
+碎片文件后缀只能为```fr```、```frag```、```fragment```或```html```。
+
+有关```PoleFragmentTag```的用法参见[Pole Mock](https://github.com/polejs/pole-mock)项目文档。
 
 #### target : String
 指定编译目标语言，取值范围：'jsp'，目前仅支持JSP。
