@@ -112,7 +112,7 @@ src: ['app/**/*.html']
 指定输出目录。
 
 #### fragmentDir : String
-指定碎片目录，在执行```pole compile```时，替换```PoleFragmentTag```知道的碎片内容。
+指定碎片目录，在执行```pole compile```时，替换```PoleFragmentTag```指定的碎片内容。
 
 碎片文件后缀只能为```fr```、```frag```、```fragment```或```html```。
 
