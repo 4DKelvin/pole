@@ -1,12 +1,12 @@
 {
     "templateEngine": "mustache",
+    "templates": {
+        "main": "templates/main"
+    },
     "actions": {
         "main": {
             "mock": "mock_datas/main",
             "url": "/xxx.do"
         }
-    },
-    "templates": {
-        "main": "templates/main"
     }
 }
